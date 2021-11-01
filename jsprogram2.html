@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scope of variables in jscript  </title>
+    <style>
+        body{
+            background-color: silver;
+        }
+         *{  color: rgb(72, 106, 145);}
+    </style>
+</head>
+<span ><h4>Adding javascript to HTML Page</h4></span>
+<script>
+     var z
+z="Hello world!"
+console.log("initially z is defined as:")
+console.log(z);
+console.log(" after invoking functio1--> z is defined as:")
+myfunction1();
+function myfunction1(){
+    z="Rampage";
+    console.log(z);
+    var x=7;
+    console.log("in fuction1  i have defined a variable x and x=",x)
+}
+console.log(" after invoking functio2--> z is defined as:")
+myfunction2();
+function myfunction2(){
+    z="Dwayne Rock"
+    console.log(z)
+    console.log("in function2 i am showing value of x here x= ",x)
+}
+console.log("From above we can conclude that here z is a global variable and x is a local variable")
+ 
+</script>
+<body>  <p> Scope refers the visibilty of variables.In other words
+    ,which parts of your program can see or use it. normally ,every variables has
+    global scopes . Once defrined ,every part of your program can access a varible.
+</p>
+<p>
+    Local variable : A local variable will be visible only within a function 
+    where it is defined
+</p>
+</body>
+</html>
